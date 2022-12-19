@@ -1,18 +1,21 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: margin-box;
 }
+
 
 
 body {
     background-color: black;
     min-width: 700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .view-settings-item, .bar-item, .user {
     cursor: pointer;
 }
+
 
 .view-settings {
     position: absolute;
@@ -72,3 +75,55 @@ body {
 .meeting-container .user .user-info .user-microphone {
     margin-right: 2px;
 }
+
+.bottom-bar {
+    bottom: 0;
+    height: 55px;
+    width: 100%;
+    background-color: #272727;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-bar .bar-section {
+    display: flex;
+}
+
+.bottom-bar .bar-section .bar-item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.bottom-bar .bar-section .bar-item .item-icon {
+    font-size: 17px;
+}
+
+.bottom-bar .bar-section .bar-item .item-description {
+    font-size: 9px;
+    margin: 7px 0;
+}
+
+.bottom-bar .bar-section .bar-item .item-more {
+    font-size: 8px;
+    margin: 2px 15px;
+}
+
+.bottom-bar .bar-section #share-screen {
+    margin-right: 15px;
+}
+
+.bottom-bar .bar-section #share-screen .item-icon{
+    color: #4BC800;
+}
+
+.bottom-bar .bar-section #end-meeting {
+    color: #FF0000;
+    background-color: #4A4A4A;
+}
+
+
